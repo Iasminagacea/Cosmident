@@ -1,0 +1,61 @@
+/* Vector */
+.vector {
+    width: 57px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.vector img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Frame 767 */
+.frame-767 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    width: 689px;
+    height: 14px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.frame-767 .home-text,
+.frame-767 .servicii-text,
+.frame-767 .despre-noi-text,
+.frame-767 .de-ce-sa-ne-alegi-text,
+.frame-767 .testimoniale-text {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #1E1E1E;
+}
+
+/* Container for logo and navigation */
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 130px;
+    gap: 117px;
+    width: 100%;
+}
