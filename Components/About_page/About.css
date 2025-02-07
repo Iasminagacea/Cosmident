@@ -1,0 +1,493 @@
+.navbar {
+    height: 100px; /* Increased height */
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF !important;
+    background: #FFFFFF !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bg-body-tertiary {
+    background-color: #FFFFFF !important;
+}
+
+/* Center the navbar-brand and its contents */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-weight: 600;
+    font-size: 20px;
+    color:  #1088FF !important;
+     margin-left: 230px;
+}
+
+
+.navbar-brand img:nth-child(2) {
+    height: 50px; /* Increased from 30px */
+    margin-right: 20px;
+    margin-left: -35px; /* Added to move d_icon left */
+}
+
+/* Keep original styling for c_icon */
+.navbar-brand img:first-child {
+    height: 35px;
+    margin-right: 5px;
+}
+
+/* Center the navigation items vertically */
+/* Increase gap between nav items */
+.navbar-nav {
+    height: 100%;
+    align-items: center;
+    gap: 50px; /* Increased from 30px to 50px */
+    margin-left: 20px;
+    margin-right: 0; /* Remove right margin */
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-link {
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-weight: 600;
+    font-size: 20px;
+    color: #1E1E1E !important;
+    padding: 0 !important;
+}
+
+.nav-link:hover {
+    color: #1088FF !important;
+    transition: color 0.3s ease;
+}
+
+/* Center the search form */
+.d-flex {
+    align-items: center;
+    height: 100%;
+}
+
+/* Ensure container takes full height */
+/* Adjust container padding */
+.container-fluid {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 30px; /* Reduced from 50px to 30px */
+    gap: 20px;
+}
+
+/* Center the toggler for mobile */
+.navbar-toggler {
+    align-self: center;
+}
+
+.contact-button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 15px;
+    width: 176px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #004754;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contact-text {
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: #1E1E1E;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.contact-text::after {
+    content: '';
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-image: url('Images_About/arrow-right.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 5px;
+}
+
+/* Add margin-right to collapse div */
+/* Move Contact button more to the left */
+.collapse.navbar-collapse {
+    margin-right: 200px; /* Reduced from 50px to 30px */
+    gap: 30px; /* Add gap between nav items and button */
+}
+
+
+/*Rectangle with map*/
+
+.rectangle-container {
+    width: 100%;
+    height: 900px;
+    background-color: #f7f7f7;
+    margin-top: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Add map image styling */
+.rectangle-container::after {
+    content: '';
+    position: absolute;
+    width: 60%; /* Adjust width as needed */
+    height: 65%; /* Adjust height as needed */
+    background-image: url('Images_About/harta.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 9%; /* Added left position to move image more to the left */
+    transform: translateX(-15%); /* Added negative transform to shift left */
+}
+
+/* Map title and info container */
+.map-info-container {
+    position: absolute;
+    right: 50px;
+    top: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.map-title {
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 36px;
+    font-weight: 540;
+    color: #1E1E1E;
+    margin-bottom: 5px;
+}
+
+.services-list {
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 20px;
+    color: #1E1E1E;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: -40px;
+    width: 100%;
+}
+
+.working-hours {
+    margin-top: 30px;
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 20px;
+    color: #1E1E1E;
+    line-height: 1.5;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #004754; /* Moved border here */
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.working-hours-title {
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-weight: 540;
+    font-size: 36px; /* Increased from 20px to 36px */
+    color: #1E1E1E;
+    margin-bottom: 20px;
+}
+
+/*Contact info map*/
+
+.contact-info {
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 20px;
+    color: #1E1E1E;
+    line-height: 1.5;
+    margin-top: -65px; /* Changed from 30px to -20px to move up */
+    width: 100%;
+    position: relative; /* Added to support absolute positioning of children */
+}
+
+.contact-section {
+    margin-bottom: 20px;
+}
+
+.contact-title {
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 25px;
+    font-weight: 600;
+    color: #1E1E1E;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    margin: 5px 0;
+}
+
+.phone-number {
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 20px;
+    color: #1E1E1E;
+    margin-top: 10px; /* Add space between address and phone number */
+    font-weight: 700;
+}
+
+.contact-section:last-child {
+    position: relative;
+    right: -350px; /* Move email section right */
+    top: -150px; /* Move email section up */
+}
+
+
+
+/* Consultation Form */
+.consultation-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 130px;
+    margin-top: 100px;
+}
+
+.consultation-form-wrapper {
+    width: 1280px;
+    height: 800px; /* Increased to match image height */
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    display: flex;
+    overflow: hidden;
+}
+
+.form-image {
+    width: 50%;
+    height: 100%;
+}
+
+.form-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the space without distortion */
+}
+
+.form-content {
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.forms-title {
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 32px; /* Decreased from 36px */
+    color: #1E1E1E;
+    margin-bottom: 20px;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px; /* Decreased from 30px */
+}
+
+.form-row input {
+    width: 230px;
+    height: 74px;
+    box-sizing: border-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 20px;
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 16px;
+    padding-left: 30px;
+}
+
+.form-row input::placeholder {
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 16px; /* Decreased from 20px */
+    color: #939394;
+}
+
+textarea {
+    width: 100%;
+    height: 74px !important; /* Added !important to make height fixed */
+    padding: 20px;
+    border: 1px solid #D1D1D1;
+    border-radius: 20px;
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 16px;
+    resize: none; /* Prevents manual resizing */
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    align-self: flex-start;
+    padding: 15px 40px;
+    background: #1088FF;  /* Changed from #004754 to blue */
+    border: 2px solid #1088FF;  /* Changed border color to match */
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: none;  /* Removed green shadow */
+    width: 500px;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.button-text {
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 20px;
+    color: #FFFFFF;  /* Changed from #96FBC6 to white */
+}
+
+.button-text::after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url('Images_About/white_right_arrow.png'); /* Changed to white arrow */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+.dropdown .btn-secondary {
+    width: 230px;
+    height: 74px;
+    box-sizing: border-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 20px;
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 16px;
+    padding-left: 30px;
+    background: white;
+    color: #939394;
+    text-align: left;
+}
+
+.dropdown .btn-secondary:hover,
+.dropdown .btn-secondary:focus {
+    background: white;
+    border: 1px solid #D1D1D1;
+    color: #939394;
+}
+
+.dropdown-menu {
+    width: 230px;
+    border-radius: 20px;
+    margin-top: 5px;
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 16px;
+}
+
+.dropdown-item {
+    padding: 10px 30px;
+    color: #939394;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+
+
+/*Footer*/
+
+.footer-image {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.footer-image img:first-child {
+    width: 100%;
+    height: 250px; /* Decreased from 300px to 250px */
+    display: block;
+}
+
+.footer-logo {
+    position: absolute;
+    top: 35%;  /* Adjusted from 40% to move up slightly */
+    left: 400px;
+    transform: translate(-50%, -50%);
+    max-width: 200px;
+    height: auto;
+}
+
+/* Add new class for the footer text */
+.footer-text {
+    position: absolute;
+    top: 55%;  /* Position below the logo */
+    left: 400px;
+    transform: translate(-50%, -50%);
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.footer-address {
+    position: absolute;
+    top: 45%;
+    left: 700px;
+    transform: translate(-50%, -50%);
+    font-family: 'Heimat Mono', monospace;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.footer-menu {
+    position: absolute;
+    top: 120px;
+    left: 1000px; /* Positioned to the right of the address */
+    transform: translate(-50%, -50%);
+    font-family: 'Heimat Mono', monospace;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: left;
+    line-height: 1.5;
+}   
+
+.footer-menu-2 {
+    position: absolute;
+    top: 120px;
+    left: 1200px; /* Further right than footer-menu */
+    transform: translate(-50%, -50%);
+    font-family: 'Heimat Mono', monospace;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+
+
