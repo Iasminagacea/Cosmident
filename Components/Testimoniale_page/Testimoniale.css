@@ -1,0 +1,756 @@
+/* Testimoniale.css */
+
+.navbar {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF !important;
+    background: #FFFFFF !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bg-body-tertiary {
+    background-color: #FFFFFF !important;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    height: 100%;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
+    font-family: 'Generisch Mono', monospace;
+    font-weight: 600;
+    font-size: 20px;
+    color: #1088FF !important;
+    margin-left: 120px; 
+}
+
+.navbar-brand img:first-child {
+    height: 30px;
+    margin-right: 5px;
+}
+
+
+.navbar-brand img:nth-child(2) {
+    height: 40px;
+    margin-right: 10px;
+    margin-left: -20px;
+}
+
+.navbar-collapse {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    margin-right: 300px; 
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 30px; 
+    gap: 30px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.nav-item:last-child .nav-link {
+    color: #1088FF !important; 
+}
+
+.nav-link {
+    font-family: 'Generisch Mono', monospace;
+    font-weight: 600;
+    font-size: 20px;
+    color: #1E1E1E !important;
+    padding: 0 !important;
+}
+
+.nav-link:hover {
+    color: #1088FF !important;
+    transition: color 0.3s ease;
+}
+
+.contact-button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 15px;
+    width: 176px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #004754;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contact-text {
+    font-family: 'Generisch Mono', monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: #1E1E1E;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.contact-text::after {
+    content: '';
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-image: url('../About_page/Images_About/arrow-right.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 5px;
+}
+
+
+/*CARD*/
+
+.card {
+    width: 80%;
+    margin: 20px auto; 
+    border-radius: 20px; 
+}
+
+
+/*REVIEW CARDS*/
+
+
+/*REVIEW CARD 1*/
+
+
+
+.col-md-4 img {
+    width: 400px; 
+    height: auto;
+    margin-left: 120px;
+    margin-top: 80px;
+    border-radius: 20px; 
+}
+
+.col-md-8 h4 {
+    font-size: 20px;
+    margin-left: 400px;
+    color: blue;
+    font-family: 'Generisch Mono', monospace;
+    margin-top: 120px;
+    margin-left: 300px;
+    
+}
+
+.col-md-8 h5 {
+    font-size: 20px;
+    margin-left: 400px;
+    font-family: 'Generisch Mono', monospace;
+    margin-bottom: 40px;
+    margin-left: 300px;
+}
+
+.col-md-8 p {
+    font-size: 14px; 
+    margin-left: 400px;
+    font-family: 'Generisch Mono', monospace;
+    margin-left: 300px;
+}
+
+
+
+
+   /*REVIEW CARD 2*/
+
+
+
+   .andreea-testimonial {
+    display: flex;
+    flex-direction: row; /* Ensure row layout */
+    margin-left: -80px; /* Move the entire row to the left */
+}
+
+.andreea-testimonial .col-md-8 {
+    order: 1; /* Text column appears first */
+}
+
+.andreea-testimonial .col-md-4 {
+    order: 2; /* Image column appears second */
+}
+
+.andreea-testimonial .col-md-4 img {
+    width: 400px;
+    height: auto;
+    margin-left: -130px; /* Reduced margin-left to move image more to the left */
+    margin-top: 80px;
+    border-radius: 20px;
+}
+
+.andreea-testimonial .col-md-8 h4 {
+    font-size: 16px;
+    color: blue;
+    font-family: 'Generisch Mono', monospace;
+    margin-top: 120px;
+    margin-left: 130px; /* Reduced margin-left to move text more to the left */
+}
+
+.andreea-testimonial .col-md-8 h5 {
+    font-size: 18px;
+    font-family: 'Generisch Mono', monospace;
+    margin-bottom: 40px;
+    margin-left: 130px; /* Reduced margin-left to move text more to the left */
+}
+
+.andreea-testimonial .col-md-8 p {
+    font-size: 14px;
+    font-family: 'Generisch Mono', monospace;
+    margin-left: 130px; /* Reduced margin-left to move text more to the left */
+}
+
+
+
+
+/*REVIEW CARD 3*/
+
+
+.alexandra-testimonial .col-md-4 img {
+    width: 400px;
+    height: auto;
+    margin-left: 120px;
+    margin-top: 80px;
+    border-radius: 20px;
+}
+
+.alexandra-testimonial .col-md-8 h4 {
+    font-size: 16px;
+    margin-left: 400px;
+    color: blue;
+    font-family: 'Generisch Mono', monospace;
+    margin-top: 120px;
+    margin-left: 300px;
+}
+
+.alexandra-testimonial .col-md-8 h5 {
+    font-size: 18px;
+    margin-left: 400px;
+    font-family: 'Generisch Mono', monospace;
+    margin-bottom: 40px;
+    margin-left: 300px;
+}
+
+.alexandra-testimonial .col-md-8 p {
+    font-size: 14px;
+    margin-left: 400px;
+    font-family: 'Generisch Mono', monospace;
+    margin-left: 300px;
+}
+
+
+
+/*REVIEW CARD 4*/
+
+
+
+.david-testimonial {
+    display: flex;
+    flex-direction: row; /* Ensure row layout */
+    margin-left: -80px; /* Move the entire row to the left */
+}
+
+.david-testimonial .col-md-8 {
+    order: 1; /* Text column appears first */
+}
+
+.david-testimonial .col-md-4 {
+    order: 2; /* Image column appears second */
+}
+
+.david-testimonial .col-md-4 img {
+    width: 400px;
+    height: auto;
+    margin-left: -130px; /* Reduced margin-left to move image more to the left */
+    margin-top: 80px;
+    border-radius: 20px;
+}
+
+.david-testimonial .col-md-8 h4 {
+    font-size: 16px;
+    color: blue;
+    font-family: 'Generisch Mono', monospace;
+    margin-top: 120px;
+    margin-left: 130px; /* Reduced margin-left to move text more to the left */
+}
+
+.david-testimonial .col-md-8 h5 {
+    font-size: 18px;
+    font-family: 'Generisch Mono', monospace;
+    margin-bottom: 40px;
+    margin-left: 130px; /* Reduced margin-left to move text more to the left */
+}
+
+.david-testimonial .col-md-8 p {
+    font-size: 14px;
+    font-family: 'Generisch Mono', monospace;
+    margin-left: 130px; /* Reduced margin-left to move text more to the left */
+}
+
+
+
+
+/*REVIEW CARD 5*/
+
+
+
+.anamaria-testimonial .col-md-8 {
+    margin-left: 470px; 
+    margin-top: -50px;
+}
+
+.anamaria-testimonial .col-md-8 h4 {
+    font-size: 16px;
+    color: blue;
+    font-family: 'Generisch Mono', monospace;
+    margin-bottom: 10px;
+}
+
+.anamaria-testimonial .col-md-8 h5 {
+    font-size: 18px;
+    font-family: 'Generisch Mono', monospace;
+    margin-bottom: 20px;
+}
+
+.anamaria-testimonial .col-md-8 p {
+    font-size: 14px;
+    font-family: 'Generisch Mono', monospace;
+    margin-top: 40px;
+}
+
+
+
+/* Custom button style */
+.custom-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px; /* Adjust as needed */
+    margin-bottom: 50px;
+}
+
+.custom-button {
+    background-color: #fe7f5d;
+    color: white;
+    font-family: 'Generisch Mono', monospace;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+
+/* "De ce Cosmident Servicii complete" text style */
+.cosmident-services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.cosmident-services-title {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 36px;
+    font-weight: bold;
+    color: #1E1E1E;
+    text-align: center;
+}
+
+.cosmident-services-subtitle {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 20px;
+    color: #1088FF;
+    text-align: center;
+}
+
+
+
+/* Implanturi Section */
+.implanturi-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    margin-top: 50px; /* More space down the page */
+    margin-left: 180px; /* Move to the left */
+    margin-bottom: 50px;
+}
+
+.implanturi-image {
+    width: 90px; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 15px;
+    margin-left: 42px;
+}
+
+.implanturi-title {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 21px;
+    font-weight: bold;
+    color: #1E1E1E;
+    margin-bottom: 8px;
+    margin-left: 30px;
+}
+
+.implanturi-text {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 12px;
+    color: #1E1E1E;
+    line-height: 1.5;
+    width: 200px; /* Adjust as needed */
+}
+
+
+
+
+/* Periaj Profesional Section */
+.periaj-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -348px;
+    margin-left: 560px;
+    margin-bottom: 50px;
+}
+
+.periaj-image {
+    width: 90px;
+    height: auto;
+    margin-bottom: 15px;
+    margin-left: 59px;
+}
+
+.periaj-title {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 21px;
+    font-weight: bold;
+    color: #1E1E1E;
+    margin-bottom: 8px;
+    margin-left: 0px;
+}
+
+.periaj-text {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 12px;
+    color: #1E1E1E;
+    line-height: 1.5;
+    width: 200px;
+}
+
+
+/*Chirurgie Orala Section*/
+
+.chirurgie-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -290px;
+    margin-left: 940px;
+    margin-bottom: 50px;
+}
+
+.chirurgie-title {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 21px;
+    font-weight: bold;
+    color: #1E1E1E;
+    margin-bottom: 8px;
+    margin-left: 0px;
+}
+
+.chirurgie-text {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 12px;
+    color: #1E1E1E;
+    line-height: 1.5;
+    width: 200px;
+}
+
+
+/*Albirea Dintilor Section*/
+
+.albirea-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -140px;
+    margin-left: 180px;
+    margin-bottom: 50px;
+}
+
+.albirea-image {
+    width: 90px;
+    height: auto;
+    margin-bottom: 15px;
+    margin-left: 47px;
+}
+
+.albirea-title {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 21px;
+    font-weight: bold;
+    color: #1E1E1E;
+    margin-bottom: 8px;
+    margin-left: 0px;
+}
+
+.albirea-text {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 12px;
+    color: #1E1E1E;
+    line-height: 1.5;
+    width: 200px;
+}
+
+
+/*Petartraj Section*/
+
+.petartraj-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -310px;
+    margin-left: 570px;
+    margin-bottom: 50px;
+}
+
+.petartraj-image {
+    width: 90px;
+    height: auto;
+    margin-bottom: 15px;
+    margin-left: 63px;
+}
+
+.petartraj-title {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 21px;
+    font-weight: bold;
+    color: #1E1E1E;
+    margin-bottom: 8px;
+    margin-left: 29px;
+}
+
+.petartraj-text {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 12px;
+    color: #1E1E1E;
+    line-height: 1.5;
+    width: 200px;
+}
+
+
+/*Ingrijire paradontala Section*/
+
+.ingrijire-paradontala-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -360px;
+    margin-left: 950px;
+    margin-bottom: 50px;
+}
+
+.ingrijire-paradontala-image {
+    width: 90px;
+    height: auto;
+    margin-bottom: 15px;
+    margin-left: 79px;
+}
+
+.ingrijire-paradontala-title {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 21px;
+    font-weight: bold;
+    color: #1E1E1E;
+    margin-bottom: 8px;
+    margin-left: 0px;
+}
+
+.ingrijire-paradontala-text {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 12px;
+    color: #1E1E1E;
+    line-height: 1.5;
+    width: 270px;
+}
+
+
+
+/* Consultation Form Section */
+.consultation-form-section {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.consultation-form-container {
+    width: 1200px;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
+    0 8px 24px rgba(0, 0, 0, 0.1),
+    0 12px 36px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
+transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.form-image-container {
+    width: 40%;
+}
+
+.form-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-content-container {
+    width: 60%;
+    padding: 40px;
+}
+
+.form-title {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    margin-left: 200px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-control input,
+.form-control textarea {
+    width: 50%;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: 'Generisch Mono', monospace;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-control textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.btn-primary {
+    background-color: #fe7f5d;
+    color: white;
+    font-family: 'Generisch Mono', monospace;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.btn-primary img {
+    margin-left: 10px;
+}
+
+
+
+
+/* Footer styles */
+.footer-image {
+    position: relative;
+    height: 250px;
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+.footer-image img:first-child {
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-logo {
+    max-width: 40px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.footer-text {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.footer-address {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer-menu,
+.footer-menu-2 {
+    font-family: 'Generisch Mono', monospace;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Remove hardcoded positioning since we're using Bootstrap grid */
+.footer-address,
+.footer-menu,
+.footer-menu-2 {
+    position: static;
+    transform: none;
+    margin-top: 0;
+    padding: 1rem;
+}
+
+/* Make sure text is centered on mobile */
+@media (max-width: 768px) {
+    .footer-image {
+        height: auto;
+        min-height: 400px;
+    }
+    
+    .footer-address,
+    .footer-menu,
+    .footer-menu-2 {
+        text-align: center;
+        margin: 1rem 0;
+    }
+}
