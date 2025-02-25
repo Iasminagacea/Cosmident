@@ -214,77 +214,62 @@
 
 
 
-<div class="consultation-form-section">
-  <div class="consultation-form-container">
-      <div class="form-image-container">
-          <img src="Images_Testimoniale/Form_image.png" alt="Form Image">
-      </div>
-      <div class="form-content-container">
-          <h2 class="form-title">Trimite-ne un mesaj<br>despre problema ta</h2>
-          <form>
-              <div class="form-control">
-                  <label for="nume" class="form-label">Nume*</label>
-                  <input type="text" class="form-control" id="nume">
-              </div>
-              <div class="form-control">
-                  <label for="procedura" class="form-label">Procedura*</label>
-                  <input type="text" class="form-control" id="procedura">
-              </div>
-              <div class="form-control">
-                  <label for="email" class="form-label">Email*</label>
-                  <input type="email" class="form-control" id="email">
-              </div>
-              <div class="form-control">
-                  <label for="telefon" class="form-label">Telefon*</label>
-                  <input type="tel" class="form-control" id="telefon">
-              </div>
-              <div class="form-control">
-                  <label for="mesaj" class="form-label">Mesaj</label>
-                  <textarea class="form-control" id="mesaj"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">
-                  Contacteaza-ne acum
-                  <img src="Images_Testimoniale/arrow-right (1).png" alt="Arrow Right">
-              </button>
-          </form>
-      </div>
-  </div>
+
+<div class="consultation-form-container">
+    <div class="consultation-form-wrapper">
+        <div class="form-image">
+            <img src="D:\IASMINA\Practica\PROIECT FIGMA 1\Components\About_page\Images_About\forms_image.png" alt="Dental forms">
+        </div>
+        <div class="form-content">
+            <h2 class="forms-title">Trimite-ne un mesaj<br> despre problema ta</h2>
+            <form class="contact-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Nume*" required>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle form-input" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Procedura*
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Item 1</a></li>
+                            <li><a class="dropdown-item" href="#">Item 2</a></li>
+                            <li><a class="dropdown-item" href="#">Item 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <input type="email" placeholder="Email*" required>
+                    <input type="tel" placeholder="Telefon*" required>
+                </div>
+                <textarea placeholder="Mesaj" required></textarea>
+                <button type="submit" class="submit-button">
+                    <span class="button-text">Contacteaza-ne acum</span>
+                </button>
+            </form>
+        </div>
+    </div>
 </div>
 
+<div class="footer-image">
+    <img src="D:\IASMINA\Practica\PROIECT FIGMA 1\Components\About_page\Images_About\footer_rectangle.png" alt="Footer background" style="width: 100%;">
+    <img src="D:\IASMINA\Practica\PROIECT FIGMA 1\Components\About_page\Images_About\cosmident_logo_footer.png" alt="Cosmident logo" class="footer-logo">
+    <div class="footer-text">Cosmident</div>
 
-<div class="footer-image container-fluid p-0">
-  <img src="../About_page/Images_About/footer_rectangle.png" alt="Footer background" class="w-100">
-  <div class="row position-absolute top-50 start-50 translate-middle w-100">
-      <div class="col-12 col-md-4 text-center">
-          <img src="../About_page/Images_About/cosmident_logo_footer.png" alt="Cosmident logo" class="footer-logo img-fluid">
-          <div class="footer-text">Cosmident</div>
-      </div>
-      
-      <div class="col-12 col-md-4">
-          <div class="footer-address text-white">
-              <strong>Adresa</strong><br>
-              Strada Visan Nr.88, Iasi 700579<br>
-              <strong>Contact</strong><br>
-              +40745 243 578
-          </div>
-      </div>
-      
-      <div class="col-12 col-md-2">
-          <div class="footer-menu text-white">
-              Home<br>
-              Servicii<br>
-              Despre noi
-          </div>
-      </div>
-      
-      <div class="col-12 col-md-2">
-          <div class="footer-menu-2 text-white">
-              Tarife<br>
-              Testimoniale<br>
-              Contact
-          </div>
-      </div>
-  </div>
+    <div class="footer-address">
+        <strong>Adresa</strong><br>
+        Strada Visan Nr.88, Iasi 700579<br>
+        <strong>Contact</strong><br>
+        +40745 243 578
+    </div>
+    <div class="footer-menu">
+        Home<br>
+        Servicii<br>
+        Despre noi
+    </div>
+    <div class="footer-menu-2">
+        Tarife<br>
+        Testimoniale<br>
+        Contact
+    </div>
 </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
