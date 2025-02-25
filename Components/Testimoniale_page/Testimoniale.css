@@ -692,65 +692,229 @@ transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
 
 
 
-/* Footer styles */
-.footer-image {
-    position: relative;
-    height: 250px;
-    margin-top: 150px;
+/* Consultation Form */
+
+.consultation-form-container{
+    margin-left: 200px;
+}
+.consultation-form-wrapper {
+    width: 1440px; /* Increased from 1280px to 1440px */
+    height: 650px; /* Reduced height to match Screenshot5 */
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    display: flex;
     overflow: hidden;
 }
 
-.footer-image img:first-child {
+.form-image {
+    width: 500px;
     height: 100%;
-    object-fit: cover;
+}
+
+.form-image img {
+    width: 520px;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the space without distortion */
+}
+
+.form-content {
+    width: 700px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.forms-title {
+    font-family: 'Heimat Mono', monospace;
+    font-size: 36px;
+    color: #1E1E1E;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px; /* Decreased from 30px */
+}
+
+.form-row input {
+    width: 260px; /* Increased from 230px */
+    height: 74px;
+    box-sizing: border-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 20px;
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 16px;
+    padding-left: 30px;
+}
+
+.form-row input::placeholder {
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 16px; /* Decreased from 20px */
+    color: #939394;
+}
+
+textarea {
+    width: 100%;
+    height: 74px !important; /* Added !important to make height fixed */
+    padding: 20px;
+    border: 1px solid #D1D1D1;
+    border-radius: 20px;
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 16px;
+    resize: none; /* Prevents manual resizing */
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    align-self: flex-start;
+    padding: 15px 40px;
+    background: #1088FF;  /* Changed from #004754 to blue */
+    border: 2px solid #1088FF;  /* Changed border color to match */
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: none;  /* Removed green shadow */
+    width: 560px; /* Increased from 500px */
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.button-text {
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 20px;
+    color: #FFFFFF;  /* Changed from #96FBC6 to white */
+}
+
+.button-text::after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url('Images_About/white_right_arrow.png'); /* Changed to white arrow */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+.dropdown .btn-secondary {
+    width: 260px; /* Increased from 230px */
+    height: 74px;
+    box-sizing: border-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 20px;
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 16px;
+    padding-left: 30px;
+    background: white;
+    color: #939394;
+    text-align: left;
+}
+
+.dropdown .btn-secondary:hover,
+.dropdown .btn-secondary:focus {
+    background: white;
+    border: 1px solid #D1D1D1;
+    color: #939394;
+}
+
+.dropdown-menu {
+    width: 230px;
+    border-radius: 20px;
+    margin-top: 5px;
+    font-family: 'Heimat Mono Semibold', monospace;
+    font-size: 16px;
+}
+
+.dropdown-item {
+    padding: 10px 30px;
+    color: #939394;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+
+
+/*Footer*/
+
+.footer-image {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.footer-image img:first-child {
+    width: 100%;
+    height: 250px; /* Decreased from 300px to 250px */
+    display: block;
 }
 
 .footer-logo {
-    max-width: 40px;
+    position: absolute;
+    top: 35%;  /* Adjusted from 40% to move up slightly */
+    left: 400px;
+    transform: translate(-50%, -50%);
+    max-width: 200px;
     height: auto;
-    margin-bottom: 1rem;
 }
 
+/* Add new class for the footer text */
 .footer-text {
-    font-family: 'Generisch Mono', monospace;
+    position: absolute;
+    top: 55%;  /* Position below the logo */
+    left: 400px;
+    transform: translate(-50%, -50%);
+    font-family: 'Heimat Mono Semibold', monospace;
     font-size: 24px;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .footer-address {
-    font-family: 'Generisch Mono', monospace;
+    position: absolute;
+    top: 45%;
+    left: 700px;
+    transform: translate(-50%, -50%);
+    font-family: 'Heimat Mono', monospace;
     font-size: 16px;
+    color: #FFFFFF;
+    text-align: left;
     line-height: 1.5;
 }
 
-.footer-menu,
-.footer-menu-2 {
-    font-family: 'Generisch Mono', monospace;
+.footer-menu {
+    position: absolute;
+    top: 120px;
+    left: 1000px; /* Positioned to the right of the address */
+    transform: translate(-50%, -50%);
+    font-family: 'Heimat Mono', monospace;
     font-size: 16px;
+    color: #FFFFFF;
+    text-align: left;
     line-height: 1.5;
-}
+}   
 
-/* Remove hardcoded positioning since we're using Bootstrap grid */
-.footer-address,
-.footer-menu,
 .footer-menu-2 {
-    position: static;
-    transform: none;
-    margin-top: 0;
-    padding: 1rem;
-}
-
-/* Make sure text is centered on mobile */
-@media (max-width: 768px) {
-    .footer-image {
-        height: auto;
-        min-height: 400px;
-    }
-    
-    .footer-address,
-    .footer-menu,
-    .footer-menu-2 {
-        text-align: center;
-        margin: 1rem 0;
-    }
+    position: absolute;
+    top: 120px;
+    left: 1200px; /* Further right than footer-menu */
+    transform: translate(-50%, -50%);
+    font-family: 'Heimat Mono', monospace;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: left;
+    line-height: 1.5;
 }
