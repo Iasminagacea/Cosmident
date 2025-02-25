@@ -1,2 +1,1 @@
-Cosmident este un website dedicat stomatologiei, structurat pe o pagină principală, o pagină de contact și o pagină de testimoniale (review-uri ale clienților). Am implementat diverse componente, precum carduri, 
-navbar și footer, utilizând tehnologii precum Bootstrap pentru un design modern și responsive.
+**Cosmident** is a website dedicated to dentistry, structured with a main page, a contact page, and a testimonials page (customer reviews). I implemented various components, such as cards, a navbar, and a footer, using technologies like Bootstrap for a modern and responsive design.
